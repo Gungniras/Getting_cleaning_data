@@ -1,0 +1,23 @@
+---
+title: "README"
+author: "Gungniras"
+date: "7/17/2020"
+output: html_document
+---
+
+As prerequisite for the script to perform the tidying of the data set, all files provided need to be stored in the working directory as .txt files
+
+Initially the script reads in all files and converts the tables into the data frame type.
+
+Secondly the the arbitrary variable names in the test and training data are replaced by the features names as provided in the features.txt file as well as the activity labels and subjects
+
+Then the test and training data set are merged with their matching activity and subject columns by rowname and excess columns are removed.
+
+Thirdly the test and training datasets are merged into one by binding rows. 
+
+Lastly the dataset is grouped by subject and activity and the mean for each individual combination is calculated and stored in a new table. 
+
+
+
+
+
